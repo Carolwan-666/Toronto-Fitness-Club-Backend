@@ -1,0 +1,1320 @@
+{
+	"info": {
+		"_postman_id": "789f7e76-41b4-45f2-b685-2aed09f07b95",
+		"name": "Backend_Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24144362"
+	},
+	"item": [
+		{
+			"name": "accounts/register/(token)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"apple\",\n    \"first_name\": \"apple\",\n    \"last_name\": \"pear\",\n    \"avatar\": null,\n    \"phone_number\": \"4160000000\",\n    \"email\": \"apple@gmail.com\",\n    \"password\": \"12345678\",\n    \"password2\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/register/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/register/(orange)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"orange\",\n    \"first_name\": \"apple\",\n    \"last_name\": \"pear\",\n    \"avatar\": null,\n    \"phone_number\": \"4160000000\",\n    \"email\": \"orange@gmail.com\",\n    \"password\": \"12345678\",\n    \"password2\":\"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/api/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/api/token/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "apple",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/login/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"apple\",\n    \"first_name\": \"apple\",\n    \"last_name\": \"pear\",\n    \"avatar\": null,\n    \"phone_number\": \"4160000000\",\n    \"email\": \"apple@gmail.com\",\n    \"password\": \"12345678\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/profile/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/profile/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/profile/edit/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "blueberry",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/profile/edit/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"profile",
+						"edit",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/all/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "banana",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/all/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"all",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/filter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "banana",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/filter",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/1/details/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "banana",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/1/details/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"1",
+						"details",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/2/classes/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "banana",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/2/classes/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"2",
+						"classes",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/2/classes/filter/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "banana",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/2/classes/filter/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"2",
+						"classes",
+						"filter",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/class/3/details/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "banana",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/class/3/details/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"class",
+						"3",
+						"details",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/2/subscribe/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Available class",
+							"value": "swim by coach shichao",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Occurrence",
+							"value": "swim by coach shichao on 2022-11-22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "available_class",
+							"value": "swim by coach shichao",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "occurrence",
+							"value": "swim by coach shichao on 2022-11-22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "subscription",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "cc_number",
+							"value": "123456789123456789",
+							"type": "text"
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2023-12-31",
+							"type": "text"
+						},
+						{
+							"key": "cc_code",
+							"value": "101",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/2/subscribe/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"2",
+						"subscribe",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/payments/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Available class",
+							"value": "swim by coach shichao",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Occurrence",
+							"value": "swim by coach shichao on 2022-11-22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "available_class",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "occurrence",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "subscription",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_number",
+							"value": "123456789123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2023-12-31",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_code",
+							"value": "111",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/profile/payments/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"payments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accounts/classes/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Available class",
+							"value": "swim by coach shichao",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Occurrence",
+							"value": "swim by coach shichao on 2022-11-22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "available_class",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "occurrence",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "subscription",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_number",
+							"value": "123456789123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2022-12-31",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_code",
+							"value": "111",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/accounts/profile/classes/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"accounts",
+						"classes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/2/enroll/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Available class",
+							"value": "swim by coach shichao",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Occurrence",
+							"value": "swim by coach shichao on 2022-11-22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "available_class",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "occurrence",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "subscription",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_number",
+							"value": "123456789123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2022-12-31",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_code",
+							"value": "111",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/2/enroll/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"2",
+						"enroll",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/2/drop/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg1OTU3NjY5LCJpYXQiOjE2Njg2Nzc2NjksImp0aSI6ImRmYTk3MzAyMTRhZDQ1NzY4OWNmOGNhZDlhMmE0NDA0IiwidXNlcl9pZCI6ImNhcm9sOCJ9.ql_lD1PBhwCifV0gz7uNDeHbj-bfiB_so775SxLrSPw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Available class",
+							"value": "swim by coach shichao",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Occurrence",
+							"value": "swim by coach shichao on 2022-11-22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "available_class",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "occurrence",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "subscription",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_number",
+							"value": "123456789123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2022-12-31",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_code",
+							"value": "111",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/2/drop/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"2",
+						"drop",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "studios/2/subscribe/cancel/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "username",
+						"value": "carol8",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "qwertyuiop",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Available class",
+							"value": "swim by coach shichao",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "Occurrence",
+							"value": "swim by coach shichao on 2022-11-22",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "available_class",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "occurrence",
+							"value": "3",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "subscription",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_number",
+							"value": "123456789123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_expiry",
+							"value": "2022-12-31",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "cc_code",
+							"value": "111",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/studios/2/subscribe/cancel/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"studios",
+						"2",
+						"subscribe",
+						"cancel",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
